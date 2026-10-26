@@ -24,6 +24,7 @@ SELECT
 p.producto_id, v.venta_id
 FROM productos p
 RIGHT JOIN ventas v ON v.producto_id = p.producto_id
+  WHERE p.producto_id IS NULL
 
 
 -- ── CONSULTA 3: FULL OUTER JOIN ───────────
